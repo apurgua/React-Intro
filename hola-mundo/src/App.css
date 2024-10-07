@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  background-image: url('../public/logo512.png');
+  /*ajusta el tamaño de la imagen de fond cubra todo área para evitar espacios vacíos*/
+  /*contain;: Escala la imagen para que se ajuste completamente dentro del elemento sin recortarse*/
+  background-size: contain;
+  /*posicion de la imagen dentro del elemento div*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Ancho del div, 100vw viewport width, toda la anchura responsive*/
+  width: 100vw;
+  /*establece altura, fijo en 100vw viewport heiht, toda la altura rspondive*/
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.Letra {
+  color: blueviolet;
+  font-size: 4rem;
+}
+
+.boton {
+  font-size: 2rem;
+  width: 300px;
+  height: 50px;
+  border: solid 2px lightgrey;
+  border-radius: 10px;
+  background-color: lightcoral;
+
+}
+
+.boton:hover {
+  background-color: rgb(70, 54, 54);
+  color: lightcoral;
+}
